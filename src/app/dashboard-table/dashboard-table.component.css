@@ -1,0 +1,13 @@
+.mat-sort-header-container {
+    align-items: center;
+}
+.export-buttons{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.export-buttons button{
+    margin-top: 20px;
+}

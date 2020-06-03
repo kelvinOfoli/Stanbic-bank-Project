@@ -1,0 +1,19 @@
+.card form {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+td {
+  padding-right: 8px;
+}
+
+.success-message{
+  padding: 20px;
+  background-color: #9cff91;
+  color: #3a7040;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

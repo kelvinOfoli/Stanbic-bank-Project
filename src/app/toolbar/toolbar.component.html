@@ -1,0 +1,10 @@
+<div class="toolbar">
+    <mat-toolbar color="primary">
+        <span>Stanbic Project</span>
+        <span class="toolbar-filler"></span>
+        <button *ngIf="!isAuthenticated" mat-button color="basic" routerLinkActive="active" routerLink="/" 
+            [routerLinkActiveOptions]="{exact:true}">Sign in</button>
+        <button *ngIf="!isAuthenticated" mat-button color="basic"  routerLinkActive="active" routerLink="/signup">Sign up</button>
+        <button mat-button color="basic" *ngIf="isAuthenticated" (click)="logoutHandler()">Log out</button>
+    </mat-toolbar>
+</div>

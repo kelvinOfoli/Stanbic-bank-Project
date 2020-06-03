@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.spinner {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+  }
+.errorMessage{
+    background-color: #ffc1c1;
+    padding: 20px;
+    color: #9e3737;
+    margin: 4px;
+}

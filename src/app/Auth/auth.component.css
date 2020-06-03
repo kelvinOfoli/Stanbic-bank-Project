@@ -1,0 +1,11 @@
+.card form{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.login-header {
+    display: flex;
+    flex-direction: row;
+
+}

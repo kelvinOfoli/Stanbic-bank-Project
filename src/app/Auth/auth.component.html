@@ -1,0 +1,19 @@
+<mat-card class="card">
+    <mat-toolbar class="login-header">
+        <span>Login</span>
+    </mat-toolbar>
+    <div class="spinner" *ngIf="isLoading">
+        <mat-spinner></mat-spinner>
+    </div>
+    <form (ngSubmit)="loginHandler(f)" #f="ngForm" *ngIf="!isLoading">
+        <div *ngIf="loginError" class="errorMessage">{{loginError}}</div>
+
+        <mat-form-field>
+            <input matInput placeholder="Email" ngModel name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Password" type="password" ngModel name="password">
+        </mat-form-field>
+        <button mat-button color="primary" type="submit">Login</button>
+    </form>
+</mat-card>
