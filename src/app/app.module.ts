@@ -30,8 +30,6 @@ const appRoutes: Routes = [
   {
     path: "dashboard",
     component: UserDashboardComponent,
-    // canActivate: [AuthGuard],
-    // children:[]
     canActivate: [AuthGuard]
   },
   { path: "signup", component: SignupComponent },

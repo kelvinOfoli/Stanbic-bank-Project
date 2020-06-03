@@ -1,3 +1,8 @@
+# My Video 
+[Video](https://drive.google.com/file/d/18cujLgduXAOYS7QwTNkTzcqLJP-mfWkH/view?usp=sharing)
+Showing how data is passed to the Dashboard component
+
+
 # StanbicProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.

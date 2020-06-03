@@ -60,7 +60,7 @@ export class DashboardTableComponent {
   exportTableToPDF() {
     html2canvas(document.querySelector("#tblData")).then(canvas => {
       this.capturedImage = canvas.toDataURL();
-      console.log("canvas.toDataURL() -->" + this.capturedImage);
+      // console.log("canvas.toDataURL() -->" + this.capturedImage);
 
       let docDefinition = {
         content: [{

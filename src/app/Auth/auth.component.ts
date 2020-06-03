@@ -10,7 +10,6 @@ import {Router} from "@angular/router";
 })
 export class AuthComponent implements OnInit {
   isLoading = false;
-  error: String = null;
   loginError: String = null;
 
   constructor(private loginService: loginService,private router: Router) { }
@@ -26,12 +25,12 @@ export class AuthComponent implements OnInit {
 
     this.loginService.signin(email, password).subscribe(
       resData => {
-        console.log(resData);
+        console.log(typeof(resData));
         this.isLoading = false;
         this.router.navigate(["/dashboard"])
       },
       errorRes => {
-        this.error = "Error occured"
+        // this.error = "Error occured"
         switch (errorRes.error.error.message) {
           case 'INVALID_PASSWORD':
             this.loginError = "Invalid Passward";

@@ -1,8 +1,8 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { catchError, tap } from "rxjs/operators";
+import { tap } from "rxjs/operators";
 import {Router} from "@angular/router";
-import { throwError, Subject } from "rxjs";
+import {  Subject } from "rxjs";
 import { User } from "./auth.module";
 // import {ToolbarComponent} from "../toolbar/toolbar.component"
 export interface AuthResponseData {
